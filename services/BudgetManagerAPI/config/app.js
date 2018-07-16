@@ -32,3 +32,5 @@ consign({cwd: "services"})
     .then("BudgetManagerAPI/app/api")
     .then("BudgetManagerAPI/app/routes")
     .into(app);
+
+module.exports = app;

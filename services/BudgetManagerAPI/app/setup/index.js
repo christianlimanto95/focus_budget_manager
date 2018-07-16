@@ -1,5 +1,5 @@
 const mongoose = require("mongoose"),
-      UserModel = require("@BudgetManagerModels/user");
+      UserModel = require("../models/user");
 
 const models = {
     User: mongoose.model("User")

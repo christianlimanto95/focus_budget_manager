@@ -2,7 +2,7 @@
   "name": "focus_budget_manager",
   "version": "1.0.0",
   "description": "tutorial NodeJS focus_budget_manager",
-  "main": "app.js",
+  "main": "./services/BudgetManagerAPI/index.js",
   "_moduleAliases": {
     "@root": ".",
     "@BudgetManager": "./services/BudgetManagerAPI",

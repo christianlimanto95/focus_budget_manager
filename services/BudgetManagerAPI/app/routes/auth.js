@@ -1,4 +1,4 @@
-const models = require("@BudgetManager/app.setup");
+const models = require("@BudgetManager/app/setup");
 
 module.exports = (app) => {
     const api = app.BudgetManagerAPI.app.api.auth;

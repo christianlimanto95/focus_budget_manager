@@ -8,14 +8,14 @@ api.setup = (User) => (req, res) => {
         password: "admin",
         clients: []
     });
+
+    admin.save(error => {
+        if (error) throw error;
+    
+        console.log("Admin account was successfully set up");
+        res.json({success: true});
+    });
 };
-
-admin.save(error => {
-    if (error) throw error;
-
-    console.log("Admin account was successfully set up");
-    res.json({success: true});
-});
 
 api.index = (User, BudgetToken) => (req, res) => {
     const token = BudgetToken;
